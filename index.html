@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sally's Page</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sally">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sally Lei</h1>
+            <h3>Table of Contents</h3>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Welcome</a></li>
+                    <li><a href="#interests">Interests</a></li> 
+                    <li><a href="#gallery">Gallery</a></li> 
+                    <li><a href="#feedback">Feedback</a></li> 
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="intro">
+                <h2>Welcome to My Page!</h2>
+                <p>Nice to see you here! My page is a bit plain...but there's more colors as you continue on</p>
+                <figure>
+                    <img src="stick1.png" alt="Hi!" width="450" height="400">
+                    <figcaption>Hi! I'm Sally Lei! Nice to meet you!</figcaption>
+                </figure>
+                <p>Hello! I'm Sally and I'm a second-year computer science major here at UCSD! I'm part of Warren College. To learn more about me, read on!</p>
+                <aside>
+                    <p><b>On a side note:</b> I can't draw, but I like drawing when I have time. Does the following count as word art?</p>
+                    <pre>
+                        HiHi      HiHi  HiHiHiHi
+                        HiHi      HiHi     Hi
+                        HiHiHiHiHiHiHi     Hi
+                        HiHiHiHiHiHiHi     Hi
+                        HiHi      HiHi     Hi
+                        HiHi      HiHi  HiHiHiHi
+                    </pre>
+                </aside>
+            </section>
+            <hr>
+            <section id="interests">
+                <h2>Interests</h2>
+                <p>I have <strong>a lot</strong> of things I like. I have made a table dividing some of the trivial things I like into categories with ranks:</p>
+                <table>
+                    <caption>Ranking Things I Like</caption>
+                    <colgroup>
+                        <col span="1" class="food">
+                        <col span="1" class="time">
+                        <col span="1" class="day">
+                    </colgroup>
+                    <tr>
+                        <td></td>
+                        <th>Most Liked Rankings</th>
+                        <th>Dislike</th>
+                    </tr>
+                    <tr>
+                        <th>Food</th>
+                        <td>
+                            <ol>
+                                <li>Spicy Noodles</li>
+                                <li>Porridge</li>
+                                <li>Fruit Cake (<i>not</i> too sweet)</li>
+                            </ol>
+                        </td>
+                        <td>Bitter Food</td>
+                    </tr>
+                    <tr>
+                        <th>Time of Day</th>
+                        <td>
+                            <ol>
+                                <li>Night (Most productive time)</li>
+                                <li>Sunset</li>
+                                <li>Sunrise</li>
+                            </ol>
+                        </td>
+                        <td>
+                            Afternoon
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Days of Week</th>
+                        <td>
+                            <ol>
+                                <li>Saturday</li>
+                                <li>Friday</li>
+                                <li>Thursday</li>
+                            </ol>
+                        </td>
+                        <td>Monday</td>
+                    </tr>
+                </table>
+                <p><em>Disclaimer:</em> These lists and rankings vary moment to moment.</p>
+                <p> Above, I have listed some pretty trivial likes and dislikes. Some deeper interests I have would be <span id="programming"><b>programming</b></span> and the <span id="tetris"><b>tetris game</b></span>.</p>
+                <p>My favorite programming language is Java. My favorite line of code is print line to console code. 
+                    <br>
+                    To print "Hello World" to console in Java: 
+                    <br>
+                    <code>System.out.println("Hello World");</code>
+                    <br>
+                </p>
+                <p>I've been playing tetris since I was a child. I'm not the best at it, but I'm fond of it since it was a part of my childhood.
+                   I haven't played in a long time, but I recall enjoying the competitiveness of the game. I also liked setting the appearance of the blocks.
+                   In case you aren't sure what tetris is, here's Tetris's About Page:
+                </p>
+                <iframe src="https://tetris.com/about-us" width="75%" height="500">   
+                </iframe>
+                <p><em><a href="https://tetris.com/play">Click here to play the tetris game</a></em></p>
+            </section>
+            <hr>
+            <section id="gallery">
+                <h2>Gallery</h2>
+                <p>Welcome to the Gallery! The Gallery helps to add a splash of color and personality to my page </p>
+                <div id="pictures">
+                    <h3>Picture</h3>
+                    <p>I like taking pictures of the city. Here's some I have taken. Resize your browser to see a different image!</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <picture>
+                                    <source media="(min-width:1000px)" srcset="city1.jpg">
+                                    <img src="city3.jpg" alt="City" height="350" width="300">
+                                </picture>
+                            </td>
+                            <td>
+                                <picture>
+                                    <source media="(min-width:1000px)" srcset="city2.jpg">
+                                    <img src="city3.jpg" alt="City" height="350" width="300">
+                                </picture>
+                            </td>
+                            <td>
+                                <picture>
+                                    <source media="(min-width:1000px)" srcset="city4.jpg">
+                                    <img src="city3.jpg" alt="City" height="350" width="300">
+                                </picture>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
+                <div id="videos">
+                    <h3>Video</h3>
+                    <p>Since I'm craving cake, here's a video taken from <a href="https://www.videvo.net/video/vegan-blueberry-cake-cut-with-knife/457876/">videvo.net</a> of a a person cutting a blueberry cake</p>
+                    <video width="400" height="300" controls>
+                        <source src="cake.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+                <div id="audio">
+                    <h3>Audio</h3>
+                    <p>Another fun fact about me: I like ASMR eating vids! (Mostly because of the food not the sounds) Here's a relaxing audio clip of running water taken from <a href="https://soundbible.com/2032-Water.html">soundbible.com</a>: </p>
+                    <audio controls>
+                        <source src="water.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                      </audio>
+                </div>
+
+                <div id="canvasSec">
+                    <h3>Canvas</h3>
+                    <p>Here's an empty canvas</p>
+                    <canvas id="canvas" width="100" height="100"></canvas>
+                </div>
+
+                <div id="svg">
+                    <h3>SVG</h3>
+                    <p>A better and much more colorful circle compared to one used for my stick figure</p>
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" stroke="yellow" stroke-width="6" fill="blue" />
+                    </svg>
+                </div>
+            </section>
+            <hr>
+            <section id="feedback">
+                <h2>Feedback</h2>
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
