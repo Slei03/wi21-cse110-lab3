@@ -20,6 +20,7 @@
                 </ul>
             </nav>
         </header>
+        <hr>
         <main>
             <section id="intro">
                 <h2>Welcome to My Page!</h2>
@@ -166,20 +167,132 @@
 
                 <div id="svg">
                     <h3>SVG</h3>
-                    <p>A better and much more colorful circle compared to one used for my stick figure</p>
+                    <p>A better and much more colorful circle compared to the one used for my stick figure</p>
                     <svg width="120" height="120">
                         <circle cx="60" cy="60" r="50" stroke="yellow" stroke-width="6" fill="blue" />
                     </svg>
+                </div>
+
+                <div id="template">
+                    <h3>Template</h3>
+                    <p>Blurry City Pic</p>
+                    <img src="city3.jpg" width="214" height="204">
+                </div>
+
+                <div id="button">
+                    <h3>Button</h3>
+                    <p>A button with no purpose</p>
+                    <button type="button">Don't Click!</button>
                 </div>
             </section>
             <hr>
             <section id="feedback">
                 <h2>Feedback</h2>
+                <p>Here's a mock feedback form. Time to get to know you! </p>
+                <details>
+                    <summary>Why fill this out?</summary>
+                    <p>There's no point in filling this out. No information will be saved. You can play with this form for fun though</p>
+                </details>
+                <details>
+                    <summary>How to fill this out?</summary>
+                    <p>Click on the input boxes. Follow your instincts</p>
+                </details>
+                <br>
+                <form>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name"> <br><br>
+
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email"> <br><br>
+
+                        <label for="bday">Birthday: </label>
+                        <input type="date" id="bday" name="bday"><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Interests</legend>
+                        <label for="range">How do you feel right now?</label><br>
+                        <label for="range">Terrible</label>
+                        <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="50" step="10">
+                        <label for="range">Great</label> <br><br>
+
+                        <label for="CD">Cat or Dog?</label><br>
+                        <input type="radio" id="dog" name="CD" value="dog">
+                        <label for="dog">Dog</label><br>
+                        <input type="radio" id="cat" name="CD" value="cat">
+                        <label for="cat">Cat</label><br><br>
+
+
+                        <label for="favNum">Favorite Number: </label>
+                        <input type="number" id="favNum" name="favNum"><br><br>
+
+                        <label for="favColor">Favorite Color: </label>
+                        <input type="color" id="favColor" name="favColor"> <br><br>
+
+                        <label for="favTime">Favorite Time: </label>
+                        <input type="time" id="favTime" name="favTime"> <br><br>
+
+                        <label for="favMonthYear">Month & Year You Most Look Forward To: </label>
+                        <input type="month" id="favMonthYear" name="favMonthYear"> <br><br>
+
+                        <label for="favFlavor">Favorite Flavor: </label>
+                        <select name="flavors" id="favFlavor">
+                            <option value="">--Please choose an option--</option>
+                            <option value="savory">Savory</option>
+                            <option value="sweet">Sweet</option>
+                            <option value="bitter">Bitter</option>
+                            <option value="spicy">Spicy</option>
+                            <option value="bland">Bland</option>
+                            <option value="other">Other</option>
+                        </select><br><br>
+                        
+                        <label for="food">Pick a dish:</label>
+                        <select id="food">
+                            <optgroup label="Main">
+                                <option>Rice</option>
+                                <option>Pasta</option>
+                                <option>Steak</option>
+                            </optgroup>
+                            <optgroup label="Dessert">
+                                <option>Cake</option>
+                                <option>Fruits</option>
+                                <option>Ice Cream</option>
+                            </optgroup>
+                        </select> <br><br>
+
+                        <label for="favDay">Pick your favorite day of the Week:</label>
+                        <input list="favDayPick" id="favDay" name="favDay"/>
+                        <datalist id="favDayPick"> 
+                            <option value="Monday">
+                            <option value="Tuesday">
+                            <option value="Wednesday">
+                            <option value="Thursday">
+                            <option value="Friday">
+                            <option value="Saturday">
+                            <option value="Sunday">   
+                        </datalist>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Anything else?</legend>
+                        <label for="else">You can tell me which street you grew up on, your mom's maiden name, the name of your first pet, etc....</label><br>
+                        <textarea id="else" name="else" rows="8" cols="45">Tell me more...
+                        </textarea><br><br>
+                        <label for="doc">You can also upload a document with your Information: </label><br>
+                        <input type="file" id="doc" name="doc"><br><br>
+                    </fieldset>
+                    <br>
+                    <label for="check">Check if you want emails: </label>
+                    <input type="checkbox" id="check" name="check"> <br><br>
+                    <input type="submit">
+                </form>
             </section>
-
         </main>
-        <footer>
 
+        <hr>
+        <footer>
+            <p>You have reached the footer of the page. I hope you enjoyed the content!</p>
+            <p><i>The End!</i></p>
         </footer>
     </body>
 </html>
