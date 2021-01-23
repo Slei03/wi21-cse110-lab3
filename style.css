@@ -70,3 +70,53 @@ figure.main-img{
 .disappearing{
     display: none;
 }
+
+/*Styling up my Interests*/
+#interests table{
+    margin-left: auto;
+    border: 1px solid black;
+    margin-right: auto;
+}
+table th, td{
+    border: 1px solid black;
+}
+.invisible-divider{
+    margin: 3.5ch 3.5ch 3.5ch 3.5ch;
+    visibility: hidden;
+}
+.grid-interests{
+    display: grid;
+    grid-template-columns: 50% 5% 45%;
+    height: 600px;
+    grid-template-rows: 20% 20% 25% 20%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px;
+}
+.grid-item1{
+    grid-column: 3;
+    grid-row: 1;
+    max-width: 90%;
+    max-height: 50%;
+}
+.grid-item2{
+    grid-column: 3;
+    grid-row: 2;
+    max-width: 90%;
+    max-height: 50%;
+}
+.grid-item3{
+    grid-column: 3;
+    grid-row: 3;
+    max-width: 90%;
+}
+.grid-item5{
+    grid-column: 3;
+    grid-row: 4;
+    max-width: 100%;
+    max-height: 50%;
+}
+.grid-item4{
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+}
