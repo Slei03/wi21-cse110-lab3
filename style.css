@@ -25,14 +25,12 @@ a[target="_blank"]{
     justify-content: space-between;
     align-self: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-.navbar ul{
+.navbar .nav-item{
     list-style-type: none;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-
+    display: inline;
 }
 
 .nav-item > a{
@@ -44,8 +42,11 @@ a[target="_blank"]{
     padding-right: 2em;
     padding-bottom: 1.5em;
     padding-left: 2em;
+    align-self: flex-end;
 }
-
+.navbar .logo{
+    align-self: flex-start;
+}
 .nav-item a:hover{
     background-color: rgba(64, 138, 211, 0.5);
     text-decoration: underline;
@@ -96,7 +97,7 @@ figure.main-img{
 
 @media screen and (max-width: 1000px) {
     #interests .favs{
-        border: 1px dotted rgb(70, 100, 182);
+        border: 1px dotted #555;
     }
     .favs th{
         border: 1px dashed rgb(70, 100, 182);
@@ -166,3 +167,9 @@ table ~ picture{
     position: fixed;
 }
 
+/*Feedback Styling*/
+
+#feedback fieldset{
+    margin-left: 15%;
+    margin-right: 15%;
+}
