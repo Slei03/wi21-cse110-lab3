@@ -3,9 +3,14 @@
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
-
+h2, h3{
+    color: #5a5a5a;
+}
 h2 + p{
     color:hsla(207, 40%, 45%, 0.952);
+}
+a[target="_blank"]{
+    color:blue;
 }
 
 a[target="_blank"]{
@@ -60,6 +65,7 @@ figure.main-img{
     border-width: 5px;
     max-height: fit-content;
     max-width: fit-content;
+    position: relative;
 }
 
 .main-img figcaption{
@@ -76,12 +82,15 @@ figure.main-img{
 }
 
 /*Styling up my Interests*/
-#interests table{
+#interests .favs{
     margin-left: auto;
     border: 1px solid black;
     margin-right: auto;
 }
-table th, td{
+.favs th{
+    border: 1px solid black;
+}
+.favs td{
     border: 1px solid black;
 }
 
@@ -132,10 +141,16 @@ table th, td{
     max-width: 100%;
     max-height: 50%;
 }
+
+.grid-item5 a:active{
+    color: rgba(64, 138, 211, 0.5);
+}
+
 .grid-item4{
     grid-column: 1;
     grid-row: 1;
     max-width: 100%;
+    min-width: 50%;
 }
 
 /*Gallery Styling*/
