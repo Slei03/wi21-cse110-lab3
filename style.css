@@ -8,6 +8,10 @@ h2 + p{
     color:hsla(207, 40%, 45%, 0.952);
 }
 
+a[target="_blank"]{
+    color:blue;
+}
+
 /*Converting Header to Nav Bar*/
 .navbar{
     max-width: 100%;
@@ -80,6 +84,19 @@ figure.main-img{
 table th, td{
     border: 1px solid black;
 }
+
+@media screen and (max-width: 1000px) {
+    #interests .favs{
+        border: 1px dotted rgb(70, 100, 182);
+    }
+    .favs th{
+        border: 1px dashed rgb(70, 100, 182);
+    }
+    .favs td{
+        border: 1px dashed rgb(70, 100, 182);
+    }
+}
+
 .invisible-divider{
     margin: 3.5ch 3.5ch 3.5ch 3.5ch;
     visibility: hidden;
@@ -120,3 +137,17 @@ table th, td{
     grid-row: 1;
     max-width: 100%;
 }
+
+/*Gallery Styling*/
+
+#gallery table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table ~ picture{
+    height: 700px;
+    width: 800px;
+    position: fixed;
+}
+
