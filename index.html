@@ -5,8 +5,13 @@
         <meta charset="UTF-8">
         <meta name="author" content="Sally">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-
+        <style type="text/css">
+            h2, h3{
+                color: #5a5a5a;
+            }
+            hr{
+                color: hsl(234°, 0%, 65%);
+            }
         </style>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -26,15 +31,17 @@
             </nav>
             </div>
         </header>
-        <hr>
+        <hr style="padding: 0px 0px; margin-block-start: 0;">
         <main>
             <section id="intro">
                 <h2>Welcome to My Page!</h2>
                 <p>Nice to see you here! My page is a bit plain...but there's more colors as you continue on</p>
-                <figure>
-                    <img src="stick1.png" alt="Hi!" width="450" height="400">
-                    <figcaption>Hi! I'm Sally Lei! Nice to meet you!</figcaption>
-                </figure>
+                <div class="fig">
+                    <figure class="main-img">
+                        <img src="stick1.png" alt="Hi!" width="450" height="400">
+                        <figcaption>Hi! I'm Sally Lei! Nice to meet you!</figcaption>
+                    </figure>
+                </div>
                 <p>Hello! I'm Sally and I'm a second-year computer science major here at UCSD! I'm part of Warren College. To learn more about me, read on!</p>
                 <aside>
                     <p><b>On a side note:</b> I can't draw, but I like drawing when I have time. Does the following count as word art?</p>
@@ -47,6 +54,7 @@
                         HiHi      HiHi  HiHiHiHi
                     </pre>
                 </aside>
+                <p class="disappearing"><span>disappearing message</span></p>
             </section>
             <hr>
             <section id="interests">
