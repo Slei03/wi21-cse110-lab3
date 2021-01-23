@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+}
+/*Converting Header to Nav Bar*/
+.navbar{
+    max-width: 100%;
+    background-color:rgba(64, 138, 211, 0.623);
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    align-items: center;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-item > a{
+    color:white;
+    font-family: Raleway;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.nav-item a:hover{
+    background-color: rgba(64, 138, 211, 0.5);
+    text-decoration: underline;
+}
+
+.nav-item a:active{
+    background-color: rgba(64, 138, 211, 0.5);
+}
